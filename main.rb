@@ -8,7 +8,7 @@ def lunch_hunt
   puts "Its is 12:59pm at Coder Academy. You start having difficulty understanding what Bianca is saying... your stomach is growling.."
   puts "Tick, Tock - 1:00pm."
   puts "Boom its lunch break, what do you do?"
-  puts "Options: nearby, deal"
+  puts "Options: nearby, deal, classroom, broadway"
   pathOption = gets.chomp.downcase
   pathOption == "nearby" ? cafe1 : (pathOption == "deal" ? traffic_ligths : (pathOption == "classroom" ? classroom : (pathOption == "broadway" ? broadway : invalid_option)))
 end
