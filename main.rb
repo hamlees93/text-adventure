@@ -44,9 +44,9 @@ decision = false
 system('clear')
 puts "Ah, a fellow cheapskate. How good is a deal?! Apparently good enough to go on an adventure. You have a 20 minute walk ahead of you to get to the free small chips from maccas"
 puts
-traffic_ligths
+traffic_lights
 
-def traffic_ligths
+def traffic_lights
     puts "Geez, these lights sure do take an age to change. Should you jay-walk?"
     puts "(Options: yes no)"
     jay_walk = gets.chomp.downcase
@@ -60,7 +60,7 @@ def traffic_ligths
     else 
         puts "Incorrect response, please try again"
         sleep(2)
-        traffic_ligths
+        traffic_lights
     end
 end
 
@@ -90,13 +90,13 @@ def lunch_hunt
   puts "Its is 12:59pm at Coder Academy. You start having difficulty understanding what Bianca is saying... your stomach is growling.."
   puts "Tick, Tock - 1:00pm."
   puts "Boom its lunch break, what do you do?"
-  puts "Options: nearby, traffic_ligths"
+  puts "Options: nearby, traffic_lights"
   pathOption = gets.chomp!
 
   if pathOption == "nearby"
     cafe1
-  elsif pathOption == "traffic_ligths"
-    traffic_ligths
+  elsif pathOption == "traffic_lights"
+    traffic_lights
   else
     puts "Thats not an option (lunch_hunt method)"
   end
