@@ -1,9 +1,7 @@
-system('clear')
-puts "Ah, a fellow cheapskate. How good is a deal?! Apparently good enough to go on an adventure. You have a 20 minute walk ahead of you to get to the free small chips from maccas"
-puts
-traffic_ligths
-
 def traffic_ligths
+    system('clear')
+    puts "Ah, a fellow cheapskate. How good is a deal?! Apparently good enough to go on an adventure. You have a 20 minute walk ahead of you to get to the free small chips from maccas"
+    puts
     puts "Geez, these lights sure do take an age to change. Should you jay-walk?"
     puts "(Options: yes no)"
     jay_walk = gets.chomp.downcase
